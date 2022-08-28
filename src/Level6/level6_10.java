@@ -1,0 +1,10 @@
+package Level6;
+
+public class level6_10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

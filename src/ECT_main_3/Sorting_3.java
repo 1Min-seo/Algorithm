@@ -4,8 +4,6 @@ package ECT_main_3;
 import java.util.*;
 
 public class Sorting_3 {
-	public static int[] arrA=new int[10000000];
-	public static int[] arrB=new int[10000000];
 	
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -13,8 +11,8 @@ public class Sorting_3 {
 		int n=sc.nextInt();
 		int k=sc.nextInt();
 		sc.nextLine();
-		arrA=new int[n];
-		arrB=new int[n];
+		Integer[] arrA=new Integer[n];
+		Integer[] arrB=new Integer[n];
 		
 		for(int i=0; i<n; i++)
 			arrA[i]=sc.nextInt();

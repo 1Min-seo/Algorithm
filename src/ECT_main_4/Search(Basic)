@@ -55,6 +55,7 @@ public class Main {
             System.out.println("원소가 존재하지 않습니다.");
         }
         else {
+        
             System.out.println(result + 1);
             
         }

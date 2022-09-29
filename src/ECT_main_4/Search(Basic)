@@ -15,8 +15,6 @@
 다시 말해 이진 탐색은 탐색 범위를 절반씩 줄이며, 시간 복잡도는 O(logN)을 보장
 
 
-
-
 import java.util.*;
 
 public class Main {

@@ -14,6 +14,7 @@ public class Searching_1 {
 			//중간 인덱스 값보다 타겟이 크면 오른쪽을 확인한다.
 			else start=mid+1;
 		}
+		
 		return -1;
 	}
 

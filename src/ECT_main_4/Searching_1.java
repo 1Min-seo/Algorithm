@@ -30,7 +30,6 @@ public class Searching_1 {
 			arr[i]=sc.nextInt();
 		}
 		
-		
 		//이진 탐색을 위해 정렬
 		Arrays.sort(arr);
 		

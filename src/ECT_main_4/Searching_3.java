@@ -5,15 +5,23 @@ import java.util.*;
 public class Searching_3 {
 	
 	public static int leftIndex(int []arr, int start, int end, int x) {
-		while(start<=end) {
+		while(start<end) {
 			int mid=(start+end)/2;
-			if(mid<x) {
-				end=mid-1;
+			if(arr[mid]<x) {
+				start=mid+1;
 			}
-			else start=mid+1;
+			else end=mid;
 		}
+		return end;
 	}
-	public static int rightIndex(int []arr, int start, int end, int x) {}
+	public static int rightIndex(int []arr, int start, int end, int x) {
+		while(start<end) {
+			int mid=(start+end)/2;
+			if(arr[mid]<=x) start=mid+1;
+			else end=mid;
+		}
+		return end;
+	}
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -25,7 +33,6 @@ public class Searching_3 {
 		for(int i=0; i<n; i++) {
 			arr[i]=sc.nextInt();
 		}
-		
 		
 
 	}

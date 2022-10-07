@@ -14,6 +14,7 @@ public class Searching_3 {
 		}
 		return end;
 	}
+	
 	public static int rightIndex(int []arr, int start, int end, int x) {
 		while(start<end) {
 			int mid=(start+end)/2;

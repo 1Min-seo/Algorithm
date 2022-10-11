@@ -23,7 +23,6 @@ public class Searching_3 {
 		}
 		return end;
 	}
-
 	
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);

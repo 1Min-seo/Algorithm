@@ -35,7 +35,6 @@ public class Searching_3 {
 			arr[i]=sc.nextInt();
 		}
 		
-		
 	}
 	
 

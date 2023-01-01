@@ -12,8 +12,7 @@ public class Greedy_2 {
 		//4. N을 K로 나눈다. 이 값은 다시 N이 된다.
 		//5. 이를 반복한다.
 		//6. N이 K보다 작을 때 반복문을 나오게 되는데 1이 되어야 하므로 1을 뺀 값을 카운트에 더한다.
-
-		
+	
 		Scanner sc=new Scanner(System.in);
 		int N=sc.nextInt();
 		int K=sc.nextInt();

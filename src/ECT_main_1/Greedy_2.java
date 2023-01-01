@@ -1,4 +1,4 @@
-//큰 수의 법칙
+//1이 될 때까지
 package ECT_main_1;
 import java.util.Arrays;
 import java.util.Scanner;

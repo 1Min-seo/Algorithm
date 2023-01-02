@@ -13,6 +13,7 @@ public class Greedy_1 {
 			cnt+=N/coin[i];
 			N%=coin[i];
 		}
+		
 		System.out.println(cnt);
 		
 	}

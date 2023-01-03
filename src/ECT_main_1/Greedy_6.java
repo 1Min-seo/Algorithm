@@ -1,28 +1,28 @@
-//모험가 길드
+//숫자 카드 게임
 package ECT_main_1;
-import java.util.Arrays;
 import java.util.Scanner;
 public class Greedy_6 {
-
+	
+	//1. N과 M의 값을 입력 받는다.
+	//2. 배열을 입력 받는다.
+	//3. 행마다 가장 작은 값을 저장하며 다음 행이 진행될 떄마다 계속 비교한다.
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int []arr=new int[n];
-		int result=0; //그룹의 수
-		int cnt=0; //현재 그룹에 포함된 모험가의 수
 		
-		for(int i=0; i<n; i++) {
-			arr[i]=sc.nextInt();
-		}
-		Arrays.sort(arr);
+		int N=sc.nextInt();
+		int M=sc.nextInt();
+		int result=0;
 		
-		for(int i=0; i<arr.length; i++) {
-			cnt+=1;
-			if(cnt>=arr[i]) {
-				result+=1;
-				cnt=0;
+		for(int i=0; i<N; i++) {
+			int minValue=10001;
+			for(int j=0; j<M; j++) {
+				int colx=sc.nextInt();
+				minValue=Math.min(minValue,colx);
 			}
+			
+			result=Math.max(result, minValue);
 		}
+		
 		System.out.println(result);
 	}
 

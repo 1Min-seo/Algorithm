@@ -5,21 +5,29 @@ public class Implementation_3 {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		int p1=sc.next().charAt(0)-'a'+1;
-		int p2=sc.nextInt();
+		String data=sc.nextLine();
 		
-		int []dx= {-2,-2,-1,-1, 2, 2, 1, 1};
-		int []dy= {-1, 1,-2, 2, 1,-1,-2, 2};
-		int result=0;
+		int row=data.charAt(1)-'0';
+		int col=data.charAt(0)-'a'+1;
 		
+		int initx=row;
+		int inity=col;
+		int cnt=0;
+		
+		//이동 좌표
+		int []dx= {-2,-2,-1,-1,1,1,2,2};
+		int []dy= {-1,1,-2,2,-2,2,-1,1};
+		int nx=0;
+		int ny=0;
 		for(int i=0; i<8; i++) {
-			int nx=p1+dx[i];
-			int ny=p2+dy[i];
+			nx=initx+dx[i];
+			ny=inity+dy[i];
 			
-			if(nx<1 || nx>8 || ny<1 || ny>8) continue;
-			result+=1;
+			if(nx>8 || ny>8 || nx<1 || ny<1) continue;
+			cnt+=1;
 		}
-		System.out.println(result);
+		
+		System.out.println(cnt);
 	}
 		
 }

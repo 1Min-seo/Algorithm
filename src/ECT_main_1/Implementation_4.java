@@ -32,7 +32,6 @@ public class Implementation_4 {
 		for(int i=0; i<charList.size(); i++) {
 			System.out.print(charList.get(i));
 		}
-		
 		System.out.println(value);
 	}
 }
